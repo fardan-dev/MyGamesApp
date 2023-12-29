@@ -9,6 +9,7 @@ import SwiftUI
 import Core
 import Game
 
+@available(iOS 16.0, *)
 struct FavouritesView: View {
   typealias Presenter = GetListPresenter<
     Any, GameDomainModel,

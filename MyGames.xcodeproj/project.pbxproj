@@ -29,7 +29,7 @@
 		42CA60B92A7BCD0300D76A47 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 42CA60B82A7BCD0300D76A47 /* CachedAsyncImage */; };
 		42CA60BC2A7BCD1B00D76A47 /* AttributedText in Frameworks */ = {isa = PBXBuildFile; productRef = 42CA60BB2A7BCD1B00D76A47 /* AttributedText */; };
 		42DC40862A62577000AF7F23 /* GamesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC40852A62577000AF7F23 /* GamesRouter.swift */; };
-		42FFDA312B3F4BC80074F382 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 42FFDA302B3F4BC80074F382 /* Core */; };
+		42FFDA342B3F710C0074F382 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 42FFDA332B3F710C0074F382 /* Core */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +65,7 @@
 				42CA60B92A7BCD0300D76A47 /* CachedAsyncImage in Frameworks */,
 				4250F8C22A7B13D700E88292 /* Game in Frameworks */,
 				4250F8C52A7B973400E88292 /* Developer in Frameworks */,
-				42FFDA312B3F4BC80074F382 /* Core in Frameworks */,
+				42FFDA342B3F710C0074F382 /* Core in Frameworks */,
 				42CA60BC2A7BCD1B00D76A47 /* AttributedText in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,7 +322,7 @@
 				42CA60B52A7BCCE700D76A47 /* Alamofire */,
 				42CA60B82A7BCD0300D76A47 /* CachedAsyncImage */,
 				42CA60BB2A7BCD1B00D76A47 /* AttributedText */,
-				42FFDA302B3F4BC80074F382 /* Core */,
+				42FFDA332B3F710C0074F382 /* Core */,
 			);
 			productName = MyGames;
 			productReference = 426EC7AD2A5854890024147C /* MyGames.app */;
@@ -358,7 +358,7 @@
 				42CA60B42A7BCCE700D76A47 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				42CA60B72A7BCD0300D76A47 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
 				42CA60BA2A7BCD1B00D76A47 /* XCRemoteSwiftPackageReference "AttributedText" */,
-				42FFDA2F2B3F4BC80074F382 /* XCRemoteSwiftPackageReference "MyGames-Core" */,
+				42FFDA322B3F710C0074F382 /* XCRemoteSwiftPackageReference "MyGames-Core" */,
 			);
 			productRefGroup = 426EC7AE2A5854890024147C /* Products */;
 			projectDirPath = "";
@@ -664,7 +664,7 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		42FFDA2F2B3F4BC80074F382 /* XCRemoteSwiftPackageReference "MyGames-Core" */ = {
+		42FFDA322B3F710C0074F382 /* XCRemoteSwiftPackageReference "MyGames-Core" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/fardan-dev/MyGames-Core.git";
 			requirement = {
@@ -703,9 +703,9 @@
 			package = 42CA60BA2A7BCD1B00D76A47 /* XCRemoteSwiftPackageReference "AttributedText" */;
 			productName = AttributedText;
 		};
-		42FFDA302B3F4BC80074F382 /* Core */ = {
+		42FFDA332B3F710C0074F382 /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 42FFDA2F2B3F4BC80074F382 /* XCRemoteSwiftPackageReference "MyGames-Core" */;
+			package = 42FFDA322B3F710C0074F382 /* XCRemoteSwiftPackageReference "MyGames-Core" */;
 			productName = Core;
 		};
 /* End XCSwiftPackageProductDependency section */

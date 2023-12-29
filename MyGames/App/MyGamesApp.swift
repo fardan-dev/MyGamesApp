@@ -37,6 +37,7 @@ let developersUseCase: Interactor<
                           DevelopersTransformer>
 > = Injection().provideDevelopers()
 
+@available(iOS 16.0, *)
 @main
 struct MyGamesApp: App {
   var body: some Scene {

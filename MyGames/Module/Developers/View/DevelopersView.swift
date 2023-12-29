@@ -9,6 +9,7 @@ import SwiftUI
 import Core
 import Developer
 
+@available(iOS 16.0, *)
 struct DevelopersView: View {
   @ObservedObject var presenter: GetListPresenter<Any, DeveloperDomainModel, Interactor<Any, [DeveloperDomainModel], GetDevelopersRepository<GetDevelopersLocaleDataSource, GetDevelopersRemoteDataSource, DevelopersTransformer>>>
   

@@ -9,6 +9,7 @@ import SwiftUI
 import CachedAsyncImage
 import Core
 
+@available(iOS 15.0, *)
 struct GameRow: View {
   let imageURL: String
   let title: String
@@ -52,6 +53,7 @@ struct GameRow: View {
   }
 }
 
+@available(iOS 15.0, *)
 struct GameRow_Previews: PreviewProvider {
   static var previews: some View {
     GameRow(imageURL: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80", title: "Ini Title", rating: "2.0", releasedDate: "01-01-1988")

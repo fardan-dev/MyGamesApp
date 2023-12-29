@@ -9,6 +9,7 @@ import SwiftUI
 import Core
 import Game
 
+@available(iOS 16.0, *)
 class GamesRouter {
   func makeGameDetailView(id: String) -> some View {
     let gameDetailPresenter = GetDetailPresenter<Any, GameDomainModel, Interactor<Any, GameDomainModel, GetGameRepository<GetGameLocaleDataSource, GetGameRemoteDataSource, GameTransformer>>>(useCase: detailGameUseCase)
