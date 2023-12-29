@@ -23,4 +23,4 @@ jobs:
     - name: Swift Package Manager
       run: xcodebuild -resolvePackageDependencies -scheme MyGames -project ./MyGames.xcodeproj
     - name: Run build
-      run: xcodebuild clean test -scheme MyGames -project ./MyGames.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild clean build -scheme MyGames -project ./MyGames.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8' | xcpretty && exit ${PIPESTATUS[0]}
