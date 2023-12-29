@@ -25,11 +25,11 @@
 		42A4CDE02A6146B700C6528E /* DeveloperRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A4CDDF2A6146B700C6528E /* DeveloperRow.swift */; };
 		42A4CDEA2A61C6C000C6528E /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A4CDE92A61C6BF00C6528E /* GameDetailView.swift */; };
 		42CA60B02A7BCC5100D76A47 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42CA60AF2A7BCC5100D76A47 /* RealmSwift */; };
-		42CA60B32A7BCCAC00D76A47 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 42CA60B22A7BCCAC00D76A47 /* Core */; };
 		42CA60B62A7BCCE700D76A47 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 42CA60B52A7BCCE700D76A47 /* Alamofire */; };
 		42CA60B92A7BCD0300D76A47 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 42CA60B82A7BCD0300D76A47 /* CachedAsyncImage */; };
 		42CA60BC2A7BCD1B00D76A47 /* AttributedText in Frameworks */ = {isa = PBXBuildFile; productRef = 42CA60BB2A7BCD1B00D76A47 /* AttributedText */; };
 		42DC40862A62577000AF7F23 /* GamesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC40852A62577000AF7F23 /* GamesRouter.swift */; };
+		42FFDA312B3F4BC80074F382 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 42FFDA302B3F4BC80074F382 /* Core */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,10 +62,10 @@
 			files = (
 				42CA60B62A7BCCE700D76A47 /* Alamofire in Frameworks */,
 				42CA60B02A7BCC5100D76A47 /* RealmSwift in Frameworks */,
-				42CA60B32A7BCCAC00D76A47 /* Core in Frameworks */,
 				42CA60B92A7BCD0300D76A47 /* CachedAsyncImage in Frameworks */,
 				4250F8C22A7B13D700E88292 /* Game in Frameworks */,
 				4250F8C52A7B973400E88292 /* Developer in Frameworks */,
+				42FFDA312B3F4BC80074F382 /* Core in Frameworks */,
 				42CA60BC2A7BCD1B00D76A47 /* AttributedText in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,10 +319,10 @@
 				4250F8C12A7B13D700E88292 /* Game */,
 				4250F8C42A7B973400E88292 /* Developer */,
 				42CA60AF2A7BCC5100D76A47 /* RealmSwift */,
-				42CA60B22A7BCCAC00D76A47 /* Core */,
 				42CA60B52A7BCCE700D76A47 /* Alamofire */,
 				42CA60B82A7BCD0300D76A47 /* CachedAsyncImage */,
 				42CA60BB2A7BCD1B00D76A47 /* AttributedText */,
+				42FFDA302B3F4BC80074F382 /* Core */,
 			);
 			productName = MyGames;
 			productReference = 426EC7AD2A5854890024147C /* MyGames.app */;
@@ -355,10 +355,10 @@
 			mainGroup = 426EC7A42A5854890024147C;
 			packageReferences = (
 				42CA60AE2A7BCC5100D76A47 /* XCRemoteSwiftPackageReference "realm-swift" */,
-				42CA60B12A7BCCAC00D76A47 /* XCRemoteSwiftPackageReference "MyGames-Core" */,
 				42CA60B42A7BCCE700D76A47 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				42CA60B72A7BCD0300D76A47 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
 				42CA60BA2A7BCD1B00D76A47 /* XCRemoteSwiftPackageReference "AttributedText" */,
+				42FFDA2F2B3F4BC80074F382 /* XCRemoteSwiftPackageReference "MyGames-Core" */,
 			);
 			productRefGroup = 426EC7AE2A5854890024147C /* Products */;
 			projectDirPath = "";
@@ -638,14 +638,6 @@
 				kind = branch;
 			};
 		};
-		42CA60B12A7BCCAC00D76A47 /* XCRemoteSwiftPackageReference "MyGames-Core" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/fardan-dev/MyGames-Core.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		42CA60B42A7BCCE700D76A47 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -670,6 +662,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		42FFDA2F2B3F4BC80074F382 /* XCRemoteSwiftPackageReference "MyGames-Core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fardan-dev/MyGames-Core.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -686,11 +686,6 @@
 			package = 42CA60AE2A7BCC5100D76A47 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
-		42CA60B22A7BCCAC00D76A47 /* Core */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 42CA60B12A7BCCAC00D76A47 /* XCRemoteSwiftPackageReference "MyGames-Core" */;
-			productName = Core;
-		};
 		42CA60B52A7BCCE700D76A47 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 42CA60B42A7BCCE700D76A47 /* XCRemoteSwiftPackageReference "Alamofire" */;
@@ -705,6 +700,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 42CA60BA2A7BCD1B00D76A47 /* XCRemoteSwiftPackageReference "AttributedText" */;
 			productName = AttributedText;
+		};
+		42FFDA302B3F4BC80074F382 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42FFDA2F2B3F4BC80074F382 /* XCRemoteSwiftPackageReference "MyGames-Core" */;
+			productName = Core;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
