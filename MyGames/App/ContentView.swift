@@ -10,6 +10,7 @@ import Core
 import Game
 import Developer
 
+@available(iOS 16.0, *)
 struct ContentView: View {
   var gamesPresenter = GetListPresenter<Any, GameDomainModel, Interactor<Any, [GameDomainModel], GetGamesRepository<GetGamesLocaleDataSource, GetGamesRemoteDataSource, GamesTransformer>>>(useCase: gamesUseCase)
   var favouritesPresenter = GetListPresenter<Any, GameDomainModel, Interactor<Any, [GameDomainModel], GetGamesRepository<GetGamesLocaleDataSource, GetGamesRemoteDataSource, GamesTransformer>>>(useCase: favouritesUseCase)
@@ -40,6 +41,7 @@ struct ContentView: View {
   }
 }
 
+@available(iOS 16.0, *)
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()

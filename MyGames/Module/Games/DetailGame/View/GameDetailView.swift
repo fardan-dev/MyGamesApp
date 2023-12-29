@@ -11,6 +11,7 @@ import AttributedText
 import Core
 import Game
 
+@available(iOS 16.0, *)
 struct GameDetailView: View {
   @ObservedObject var presenter: GetDetailPresenter<Any, GameDomainModel, Interactor<Any, GameDomainModel, GetGameRepository<GetGameLocaleDataSource, GetGameRemoteDataSource, GameTransformer>>>
   let id: String
@@ -116,6 +117,7 @@ struct GameDetailView: View {
   }
 }
 
+@available(iOS 16.0, *)
 extension GameDetailView {
   var bannerImage: some View {
     CachedAsyncImage(url: URL(string: presenter.item?.backgroundImage ?? "")) { image in
