@@ -21,6 +21,6 @@ jobs:
       with:
         xcode-version: '14.2.0'
     - name: Swift Package Manager
-      run: xcodebuild -resolvePackageDependencies -scheme MyGames -project ./MyGames.xcodeproj -configuration Debug -derivedDataPath ./build -destination platform\=iOS\ Simulator,name\=iPhone\ 8
+      run: xcodebuild -resolvePackageDependencies -scheme MyGames -project ./MyGames.xcodeproj -configuration Debug -derivedDataPath ./build -destination platform\=iOS\ Simulator,name\=Any\ iOS\ Simulator\ Device
     - name: Run build
-      run: xcodebuild clean -scheme MyGames -project ./MyGames.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 8' build | xcpretty
+      run: xcodebuild clean -scheme MyGames -project ./MyGames.xcodeproj -destination 'platform=iOS Simulator,name=Any iOS Simulator Device' build | xcpretty
