@@ -23,4 +23,4 @@ jobs:
     - name: Swift Package Manager
       run: xcodebuild -resolvePackageDependencies -scheme MyGames -project ./MyGames.xcodeproj
     - name: Run build
-      run: xcodebuild clean -scheme MyGames -project ./MyGames.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.2' build | xcpretty
+      run: xcodebuild clean -scheme MyGames -project ./MyGames.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14 Pro' build | xcpretty
