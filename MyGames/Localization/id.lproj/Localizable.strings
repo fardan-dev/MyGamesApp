@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  MyGames
+
+  Created by Muhamad Fardan Wardhana on 03/08/23.
+  
+*/
+
+// Tab Title
+"games_tab_title" = "Permainan";
+"favorites_tab_title" = "Favorit";
+"developers_tab_title" = "Pengembang";
+"about_tab_title" = "Tentang";
+
+// Game List
+"games_title" = "Permainan";
+"released" = "Rilis:";
+
+// Detail Game
+"about_title" = "Tentang";
+"platforms_title" = "Platform";
+"genre_title" = "Genre";
+"publisher_title" = "Penerbit";
+"developer_title" = "Pengembang";
+"tag_title" = "Tag";
+"website_title" = "Situs Web";

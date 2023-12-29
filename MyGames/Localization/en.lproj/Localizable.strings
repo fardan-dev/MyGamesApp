@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  MyGames
+
+  Created by Muhamad Fardan Wardhana on 03/08/23.
+  
+*/
+
+// Tab Title
+"games_tab_title" = "Games";
+"favorites_tab_title" = "Favourites";
+"developers_tab_title" = "Developers";
+"about_tab_title" = "About";
+
+// Game List
+"games_title" = "Games";
+"released" = "Released:";
+
+// Detail Game
+"about_title" = "About";
+"platforms_title" = "Platforms";
+"genre_title" = "Genre";
+"publisher_title" = "Publisher";
+"developer_title" = "Developer";
+"tag_title" = "Tags";
+"website_title" = "Web";
